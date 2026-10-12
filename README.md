@@ -23,11 +23,11 @@ For the following graph, list the vertices and edges. What is the size of the gr
 
 ![ex1](images/ex1.png)
 
-- **Vertices**: 
+- **Vertices**: 0, 1, 2, 3, and 4
 
-- **Edges**: 
+- **Edges**: (1, 0), (2, 0), (0, 3), and (3, 4)
 
-- **Size**:
+- **Size**: 5 vertices and 4 edges (so the graph is fairly small, but it is connected enough to show the basic idea)
 
 
 ## Paths and Distances
@@ -45,26 +45,26 @@ The graph below shows the state of the internet in 1970s. Vertices represent com
 
 1. Find a path from RAND to SRI. What is the distance between these two vertices?
 
-- **Path**:
+- **Path**: RAND, STAN, SRI
 
-- **Distance**:
+- **Distance**: 2
 
 2. Find a path from RAND to MIT. What is the distance between these two vertices?
 
-- **Path**:
+- **Path**: RAND, SDC, MIT
 
-- **Distance**:
+- **Distance**: 2
 
 3. Classify each of the following paths as simple, not simple, or a cycle. State your reasoning!
 
 - **Path 1**: LINC, MIT, LINC, CASE
-- **Classification**:
+- **Classification**: Not simple, because a vertex is repeated before the path ends and it does not start and end at the same place
 
 - **Path 2**: UCSB, SRI, STAN, UCLA, UCSB
-- **Classification**:
+- **Classification**: A cycle, because it begins and ends at the same vertex and the internal vertices are all distinct
 
 - **Path 3**: UCSB, SRI, UTAH
-- **Classification**:
+- **Classification**: Simple, because all vertices appear only once and there are no repeated stops
 
 ## Connectivity and Trees
 
@@ -77,6 +77,8 @@ Think through these with your partner(s) before answering the questions below. I
 
 1. A connected graph is defined as a graph with paths between every pair of vertices. If a graph with 10 vertices has exactly 8 edges, is it possible for the graph to be connected? Explain your reasoning based on the minimum number of edges required to link all vertices.
 
-
+- **Answer**: No, a connected graph with 10 vertices needs at least 9 edges to keep all the vertices linked together. With only 8, the graph would be too sparse to connect every vertex, so it would not be connected.
 
 2. A tree is a connected graph with no cycles. If you take an existing tree and add exactly one new edge between two non-adjacent vertices, what structural property is immediately violated?
+
+- **Answer**: The tree would immediately gain a cycle, which violates the defining property that a tree has no cycles. It would still be connected, but it would no longer be a tree.
